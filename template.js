@@ -1,4 +1,4 @@
-if ((path = process.platform !== "linux")) {
+if (process.platform !== "linux") {
   const start = new Date();
   const memory = Math.floor(process.memoryUsage().heapUsed / 1024 / 1024);
 

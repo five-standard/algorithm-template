@@ -1,8 +1,10 @@
+const DEV_INPUT_PATH = "in.txt";
+
 if (process.platform !== "linux") {
   const start = new Date();
   const memory = Math.floor(process.memoryUsage().heapUsed / 1024 / 1024);
 
-  console.log(solution(require("fs").readFileSync("in.txt").toString().trim()));
+  console.log(solution(require("fs").readFileSync(DEV_INPUT_PATH).toString().trim()));
   console.log(`memory: ${memory}mb`);
   console.log(`time: ${new Date() - start}ms`);
 
